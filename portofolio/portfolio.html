@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- links --->
+     <link rel="stylesheet" href="../../css/normalize.css">
+     <link rel="stylesheet" href="../../css/all.min.css">
+     <link rel="stylesheet" href="portfolio.css">
+    <!-- links --->
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+        <i class="fa-solid fa-code logo"></i>
+        <i class="fa-solid fa-bars side-icon"></i>
+        <div class="sidebar">
+            <i class="fa-solid fa-code logo"></i>
+            <ul>
+                <li class="active"><a href="#Home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    <div class="about-us">
+    <div class="container">
+        <div class="image">
+        <img src="media/personal-photo.jpg" alt="">
+    </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellendus veritatis, animi corrupti dolorem excepturi saepe fugit ipsa accusantium aspernatur repellat alias dolor repudiandae maxime nam deserunt, quisquam ducimus a.</p>
+    </div>
+    </div> 
+    <div class="skills" id="skills">
+        <h3 class="header">My Skills</h3>
+        <div class="info">
+            <img src="media/skills.png" alt="">
+        <div class="skill"  style="background : conic-gradient(var(---main-color) 0 99% , #EEE 99%);"> <div class="progress"> <span>HTML</span> <br> 99%</div></div>
+        <div class="skill" style="background : conic-gradient(var(---main-color) 0 99% , #EEE 99%);"> <div class="progress"> <span>CSS</span> <br> 99%</div></div>
+        <div class="skill" style="background : conic-gradient(var(---main-color) 0 75% , #EEE 75%);"> <div class="progress"> <span>JavaScript</span> <br> 75%</div></div>
+    </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <h3 class="header">My Portfolio</h3>
+        <p>Here is collection of projects designed by Me </p>
+        <div class="projects">
+        <div class="project">
+            <img src="../../templates/template-One/media/landing.jpg" alt="">
+            <a href="../../templates/template-One/template one.html">Open project</a>
+        </div>
+        <div class="project">
+            <img src="../../templates/template-One/media/landing.jpg" alt="">
+            <a href="../../templates/template-One/template one.html">Open project</a>
+        </div>
+    </div>
+</div>
+    <div class="contact-us" id="contact">
+
+    </div>
+    <div class="footer">
+        
+    </div>
+
+
+    <!-- js code space  -->
+
+    <script>
+        let sideicon = document.querySelector(".side-icon"); 
+        let sidebar = document.querySelector(".sidebar") ;
+
+        sideicon.onclick = function(){
+            
+            if(sidebar.hasAttribute("style")){
+               sidebar.removeAttribute("style")
+            }
+             else{
+               sidebar.setAttribute("style" , "left : 0 ; opacity : 1");/* opacity for mobile media */
+    }
+        }
+      
+    </script>
+
+</body>
+</html>

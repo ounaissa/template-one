@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+    list-style-type: none;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 22%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+        }
+       .ground{   
+         width: 110px;
+    height: 5px;
+    background-color: black;
+    position: relative;
+    top: 100%;
+    left: 50%;
+       }
+       .wall{
+        height: 200px;
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    left: 75%;
+    top: 0;
+       }
+.rouf{
+    height: 5px;
+    width: 110px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 77%;
+}
+.line{
+    width: 75px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    left: 71%;
+    top: 27px;
+    transform: rotate(-45deg);
+}
+.hang{
+    width: 5px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    right: -59px;
+}
+.head{
+    border: 2px solid black;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: -85px;
+    top: 50px;
+}
+.body{
+    position: absolute;
+    background-color: black;
+    width: 2px;
+    height: 70px;
+    right: -59px;
+    top: 52%;
+}
+.lhand{
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+    right: -42px;
+    top: 48%;
+    transform: rotate(45deg);
+}
+.rhand{
+   
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+    right: -77px;
+    transform: rotate(-45deg);
+    top: 48%;
+}
+.rlag{
+    background-color: black;
+    position: absolute;
+    height: 50px;
+    width: 2px;
+    transform: rotate(-45deg);
+    right: -77px;
+    top: 83%;
+}
+.L-lag{
+    background-color: black;
+    position: absolute;
+    height: 50px;
+    width: 2px;
+    transform: rotate(45deg);
+    right: -42px;
+    top: 83%;
+}
+
+.alpha{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(100px , 1fr));
+    flex-basis : 50% ; 
+}
+.alpha span {
+    padding: 10px;
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    margin: 10px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.letters-guess{  
+    margin: 10px auto;
+    background-color: #ccc;
+    height: 90px;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    padding: 15px;
+    max-width: 100%;
+ }
+.letters-guess span {
+    color: white;
+    height: 150px;
+    width: 700px;
+    position: relative;
+    border-bottom: 4px solid #2196f3;
+    padding: 14px;
+    margin: 0 15px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.letters-guess .with-space{
+    border : none ; 
+}
+.alpha span.clicked {
+    background-color: #222;
+    opacity: .2;
+    pointer-events: none;
+}
+.popup{
+    background-color: #2196f38a;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 441px;
+    height: fit-content;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    transform: translate(-50% , 50%);
+    display: none;
+}
+    .info{
+    display: flex;
+    max-width: 100%;
+}
+    </style>
+
+<!-- Html -->
+<div class="info">
+<div class="alpha">
+  
+</div>
+
+
+
+    <ul class="container">
+        <li hidden class="L-lag"></li>
+        <li hidden class="rlag"></li>
+        <li hidden class="rhand"></li>
+        <li hidden class="lhand"></li>
+        <li hidden  class="body"></li>
+        <li hidden class="head"></li>
+        <li hidden class="hang"></li>
+        <li hidden class="rouf"></li>
+        <li hidden class="line"></li>
+        <li hidden class="wall"></li>
+        <li hidden class="ground"></li>
+    </ul>
+
+</div>
+    <div class="letters-guess">
+
+    </div>
+<!-- ganerate letters -->
+
+
+<!-- ganerate letters -->
+<!-- Html -->
+
+
+    <script src="project.js"></script>
+</body>
+</html>

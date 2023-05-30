@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin : 0 ;
+}
+a{
+    text-decoration: none;
+    color : black;
+}
+ul{
+    list-style-type: none;
+    margin :0;
+    padding : 0;
+}
+body{
+    font-family: "Cairo", sans-serif ;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.types{
+    background-color: #EEE;
+    width: 140px;
+    padding: 15px 0;
+    height: 665px;
+    overflow: auto;
+}
+.types li{
+    margin-bottom: 15px;
+    padding: 10px;
+transition: 0.3s;
+}
+.types li:hover{
+    background-color: #cccc;
+    padding-left: 15px;
+}
+.container{
+    display: flex;
+}
+.price{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #EEE;
+    padding: 50px;
+    border-radius: 50px;
+}
+.price input {
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    border: 0;
+}
+.price input:focus {
+    outline: none;
+}

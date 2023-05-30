@@ -1,0 +1,40 @@
+[
+{
+    "title" : "why we use <br> tag ?" ,
+    "answer_1" : "to bold the text",
+    "answer_2" : "to put long space" , 
+    "answer_3" : "to put a linebreak " , 
+    "right_answer" : "to put a linebreak "
+},
+{
+    "title" : "can we put elements next to each other using html" ,
+    "answer_1" : "NO",
+    "answer_2" : "Yes" , 
+    "answer_3" : "in speciefic cases yes" ,
+    "right_answer" : "NO"
+},{
+    "title" : "what hr tag does " ,
+    "answer_1" : "put a linebreak between elements",
+    "answer_2" : "there is no hr tag name " ,
+    "answer_3" : "to creat horizontal line " ,
+    "right_answer": "to creat horizontal line " 
+},{
+    "title" : "what the deffernt between div and sematic elements" ,
+    "answer_1" : "no deffenrt at all",
+    "answer_2" : "semantic elements are used instead of div they have a more logic name about the section" ,
+    "right_answer" : "semantic elements are used instead of div they have a more logic name about the section" , 
+    "answer_3" : "only tag name " 
+},{
+    "title" : "why we use <br> tag ?" ,
+    "answer_1" : "to bold the text",
+    "answer_2" : "to put a linebreak " , 
+    "answer_3" : "there is no br tag in html " , 
+    "right_answer" : "to put a linebreak "
+},{
+    "title" : "why we use <br> tag ?" ,
+    "answer_1" : "to put a linebreak ",
+    "answer_2" : "to put long space" , 
+    "answer_3" : "there is no br tag in html " , 
+    "right_answer" : "to put a linebreak "
+}
+]
