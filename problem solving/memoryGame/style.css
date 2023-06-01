@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contorle{
+    position: fixed;
+    left: 0 ;
+    top : 0 ;
+    width : 100% ; 
+    height: 100%;
+    z-index: 2 ;
+    background-color : #2195f36c ;
+}
+.contorle span {
+    position: absolute;
+    left : 50% ; 
+    top : 50% ; 
+    transform: translate(-50% , -50%);
+    color : white ; 
+    background-color: #f44336;
+    padding : 15px 25px ; 
+    font-size : 30px ; 
+    text-align: center;
+    border-radius: 6px ;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contorle span:hover {
+    background-color: #d43025;
+}
+
+.info{
+    width : 1080px ;
+    margin: 20px auto 0 ;
+    background-color: #f6f6f6 ;
+    padding : 20px ; 
+    font-size : 24px ;
+    display: flex;
+    justify-content: space-between;
+    border-bottom : 2px solid #2196f3 ; 
+}
+.container img {
+    max-width : 300px;
+}
+
+.container { 
+    display : grid ;
+    grid-template-columns: repeat(auto-fill , minmax(350px , 1fr)); 
+    flex-wrap: wrap;
+    margin : 20px auto ; 
+    
+}
+
+.container .game-block {
+    height : 200px ; 
+    transition: transform .5s;
+    transform-style :preserve-3d;
+    cursor : pointer ; 
+    position : relative ; 
+    flex : 1 0 200px ; 
+    margin : 0 10px 20px ; 
+}
+
+.container .game-block .front {
+    background-color: #333;
+    line-height: 200px;
+    position : absolute ; 
+    width : 100% ; 
+    height : 100% ; 
+    text-align: center;
+    z-index: 1;
+
+}
+.container .game-block .front::before {
+    content : "?" ;
+    color : #fff ;
+    font-size: 140px ;
+    font-weight: bold;
+}
+.container .game-block .back {
+    background-color: #f6f6f6;
+    transform: rotatey(180deg);
+    text-align: center;
+    width: 101%;
+    height: 100%;
+    overflow: hidden;
+}
+.container .game-block .back img{
+    width: 201px;
+    padding: 10px;
+}
+.container .game-block .face{
+    backface-visibility: hidden;
+    border : 3px solid #2196f3;
+}
+.container .game-block.is-flipped ,
+.container .game-block.matched {
+    transform: rotatey(180deg);
+}
+
+.no-clicking{
+    pointer-events: none;
+}
+@media (max-width : 990px) {
+    .container { 
+        grid-template-columns: repeat(auto-fill , minmax(250px , 1fr)); 
+    }
+}
