@@ -1,0 +1,173 @@
+.loading{
+    border: 10px solid darkturquoise ;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;  
+    border-style: dashed dashed solid solid;
+    animation: loading-left 1s infinite linear ;
+    margin : auto ;
+}
+.loading::before{
+    content : "";
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom : 0 ; 
+    right :0 ; 
+    margin : auto ; 
+    border-style: dashed solid;
+    animation: loading-right 2s infinite linear ;
+    width: 70px;
+    height: 70px;
+}
+@keyframes loading-right {
+    0%{
+        transform: rotate(0);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-left {
+    0%{
+        transform: rotate(0);
+    }100%{
+        transform: rotate(-360deg);
+    }
+}
+/*********************************/
+.blend-mode{
+    position: relative;
+
+    margin: 50px auto ;
+    background-color: black;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.blend-mode span {
+    color : white;
+    font-size: 100px;
+    font-family: "sans srif";
+    letter-spacing: 10px;
+    position: relative;
+    z-index: 1;
+   mix-blend-mode: difference;
+}
+.blend-mode::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0% , 100% {
+        left : 0 ; 
+    }
+    50%{
+       left : calc(100% - 100px); 
+    }
+    
+}
+/*****************************/
+.page{
+    margin-top : 50px ;
+    position: relative;
+    overflow: hidden;
+    height : 600px; 
+}
+.page::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top : 50% ; 
+    transform: translatex(-50%);
+    bottom: -500px;
+    background-color: #2196f3;
+    width: 300%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1; 
+    animation: wave 8s linear infinite alternate;
+}
+.page .card {
+    width  : 300px ; 
+    height : 450px ; 
+    padding : 15px ; 
+    margin: auto;
+    background-color: #fff;
+    border : 2px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+}
+.page .card span {
+    display: block;
+    background-color: #2196f3;
+    padding : 20px ; 
+    width : 250px ; 
+    height : 300px;
+    border-radius: 10px ;
+    color : white ; 
+    display : flex ; 
+    justify-content: center;
+    align-items: center;
+    font-size : 70px ;
+    font-family: sans-serif;
+}
+.page .card h3 {
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.page .card p {
+    color : #333 ; 
+}
+
+@keyframes wave {
+    0% {
+    transform:  translatex(-50%) skew(0 , -10);
+    }50%{
+    transform:  translatex(-30%) skew(-10deg, 0deg) ;
+
+    }
+}
+/**************************/
+.minu-icon{
+    margin : 100px auto ;
+    height: 50px;
+    width: fit-content;
+}
+.minu-icon span {
+    display: block;
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.minu-icon:hover > span:first-child{
+    background-color: red;
+    border-radius: 0;
+    transform: translatey(30px) rotate(45deg);
+}
+
+.minu-icon:hover > span:nth-child(2){
+    background-color: red;
+    border-radius: 0;
+    transform: rotate(-45deg);
+}
+.minu-icon:hover > span:last-child{
+    display : none ;
+}
+
