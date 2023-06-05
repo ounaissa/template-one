@@ -1,0 +1,24 @@
+[
+    {
+        "title" : "الحروف الأبجدية وتراكيب الحروف " ,
+         "Words" : ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Z", "Y", "Z"] ,
+         "explain" : "<span>Ch --> </span><br><span>النطق : تشا</span><br><span>مثل : chair</span><hr> <span>sh --> </span><br><span>النطق : شا</span><br><span>مثل : ship | sheep </span> <hr> <span>th --> </span><br><span>النطق : ثـ أو ذ  </span><br><span>مثل : three | the  </span>" 
+    },
+    
+    {
+        "title" : "دمج الحروف و تكوين السؤال  " ,
+         "Words" : ["chair" , "table" , "man" , "woman" , "cabinet" ] ,
+         "explain" : "<span>this : </span><span>هذا/ هذه</span><br><span>that : </span><span>ذلك / تلك </span><br><span> is : </span><span>يكون / تكون </span><hr><div style=\"direction : rtl \" ><span class = \"topic\" >تكوين السؤال : </span><br><span>this is a table => </span><span>is this a table</span> <br> <span>that is a woman => </span><span>is that a woman </span> <span class = \"topic\" >الشرح :</span><br><p>لتكوين السؤال نقوم بوضع كلمة \"is\" في لبداية </p> </div>" 
+    },
+
+    {
+        "title" : "تعلم النفي  " ,
+         "Words" : ["a laptop" , "a ,phone" , "a teacher" , "a student" , "a floor" , "a ceiling" , "a wall" , "a window" ] ,
+         "explain" : "<div style=\"direction : rtl \" ><span class = \"topic\" > لنفي جملة : </span><br><span>this is a laptop => </span><span>this is not a laptop </span> <br> <span>that is a phone => </span><span>that is not a phone</span> <span class = \"topic\" >الشرح :</span><br><p>لنفي جملة نضيف كلمة \" not \" بعد كلمة \"is\" في الجملة</p> </div>" 
+    },
+    {
+        "title" : "A & AN  المفرد " ,
+         "Words" : ["police officer" , "a doctor" , "a fireman" , "a boy" , "a girl"  , "a baby" , "an egg" , "an apple" , "an orange" , "an icecream " , "an umbrella"] ,
+         "explain" : "<div style = \"direction: rtl \"><span class=\"topic\">أدوات المفرد</span><br><span>A / An </span><br><span class=\"topic\">الشرح :</span><br><p>  توضع قبل الاسم للدلالة على أنه مفرد an : قبل الاسم المبدوء بصوت \"a\" <br> a : توضع قبل كل الأسماء عدا المبدوءة بصوت \"a\" <br> </p><span class=\"topic\">أمثلة :</span><br><span>a laptop | </span><span>an apple</span><br><span>a phone |</span><span>an orange</span></div> " 
+    }
+]

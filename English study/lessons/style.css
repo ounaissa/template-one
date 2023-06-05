@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"Cairo";
+}
+:root{
+    --main-color : #c8c5ff ; 
+    --hover-color : #6c63ff ; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container .sider {
+    padding: 20px 0;
+    background-color: var(--main-color);
+    width: 300px;
+    height: 900px;
+    border-radius: 10px;
+    margin: 10px 25px;
+    position: relative;
+    box-shadow: -7px 5px 20px #eee;
+}
+.container .sider ul {
+    list-style: none ;
+    font-size: 30px;
+    direction: rtl;
+
+}
+.container .sider ul li{
+    padding: 0 35px;
+    position: relative;
+    overflow: hidden;
+}
+.container .sider ul li:before{
+    content : "" ;
+    position :absolute;
+    left: -100%;
+    bottom : 0 ; 
+    height: 2px;
+    width: 100%;
+    background-color: var(--hover-color);
+    transition: 0.3s;
+}
+
+.container .sider ul li:hover::before
+,.container .sider ul li.selected::before{
+    left : 0 ;
+}
+.container .lesson{
+    order : -1 ; 
+}
+.container .lesson .review{
+    width: 500px;
+    padding: 30px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+.container .title{
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: var(--main-color);
+    padding: 25px;
+    border-radius: 10px;
+}
+.container .lesson .review .words{
+    padding: 30px;
+    border-bottom: 3px solid var(--hover-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .lesson .review .words span {
+    padding: 5px 10px;
+    background-color: var(--hover-color);
+    color: #fff;
+    display: block;
+    margin: 10px;
+    border-radius: 6px;
+}
+.container .lesson .review .explain{
+    padding: 10px;
+    font-size: 25px;
+    direction: ltr;
+}
+.container .lesson .review .explain hr{
+border: 0.5px solid var(--hover-color);
+margin: 15px 0;
+}
+/* Media */
+@media (max-width : 767px ) {
+    .container{
+        flex-direction: column;
+    }
+    .container .sider{
+        height: 50px ; 
+        padding : 0 ; 
+        transition: 0.3s;
+    }
+    .container .sider ul{
+        position: relative;
+        top: -188px;
+        opacity: 0 ;
+        transition: 0.5s;
+        display: none;
+    }
+    .container .sider:hover{
+        height :300px; 
+    }
+    .container .sider:hover > ul{
+        position: relative;
+        top: 0;
+        opacity: 1 ;
+        display: block;
+    }
+    .container .lesson {
+        order: 0;
+        max-width: 90%;
+        margin: 80px auto;
+    }
+    .container .lesson .review{
+        max-width: 100%;
+    }
+}
+/* Media */
+@keyframes height_move {
+    0%{
+        height : 50px ; 
+    }100%{
+        height: fit-content;
+    }
+}
